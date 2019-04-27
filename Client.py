@@ -62,7 +62,6 @@ class Client:
         except socket.error as err:
             raise ClientSocketError("error send data", err)
 
-        # читаем ответ
         payload = self._read()
 
         data = {}
